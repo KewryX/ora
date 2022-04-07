@@ -1,0 +1,39 @@
+py -m pip install --user --upgrade pip
+py -m pip install --user virtualenv
+py -m pip install --user -U Django
+pip install Django
+GIITHUB:
+1. A github.com-on csináljunk egy új REPONEVE GitHub repót
+2. add .gitignore listből válasszuk ki a Python-t.
+3. init with README.md
+4. Másold ki vágólapra a git repo címét, amit a github repód Code-gombjára kattintva találsz meg, és valahogy így néz ki:
+py -m virtualenv -p python3 VENV
+.\VENV\Scripts\activate
+
+
+py -m pip install --upgrade pip
+py -m pip install django
+py -m pip install gunicorn
+py -m pip install dj-database-url
+py -m pip install whitenoise
+py -m pip install django-rest-framework
+ 
+
+ami ha nem működik
+py -m django startproject PROJEKT
+menj oda, ahol a manage.py van
+és ott
+py manage.py runserver
+Molnár Attila — 2022.03.01.
+Set-ExecutionPolicy Unrestricted -Scope Process
+Molnár Attila — 2022.03.01.
+manage.py könyvtárában
+py manage.py makemigrations
+py manage.py migrate
+py manage.py createsuperuser
+Molnár Attila — 2022.03.10.
+py .\manage.py startapp APP
+
+
+
+py manage.py createsuperuser
